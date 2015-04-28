@@ -25,15 +25,23 @@
 
 
 <section id="intro" class="centered bg-blue top">
-  <div class="container">
-    <BR><BR><span class="action">InnovaTigo</span>
+  <div class="container innovatigo">
+    <div class="row">
+      <div class="col-md-3 col-sm-12 col-xs-12">
+        <%= image_tag "tigo.png", class: "img-responsive center-block tigo" %>
+      </div>
+      <div class="col-md-9 col-sm-12 col-xs-12">
+        <h1>Innovation<span class="team"> team</span></h1>
+        <h3 class="ufm">Michael Polanyi College</h3>
+      </div>
+    </div>
   </div> <!-- /container -->
 </section> <!-- /intro -->
 
 <section id="what">
   <div class="container centered">
       <div class="col-lg-12">
-          <h1 class="grow">Tigo necesita un equipo de innovación</h1>
+          <h2 class="grow">Tigo necesita un equipo de innovación</h2>
       </div>  
       <div>
           <p>El MPC es un programa exclusivo compuesto por líderes innovadores.<BR>Afrontamos los retos de la economía creativa gracias a nuestra diversidad y capacidad de compromiso a largo plazo. Nuestro modelo de aprendizaje, único en la UFM, facilita la creación de TIGO INNOVATION TEAM.</p>
@@ -211,25 +219,21 @@
         <div class="box-content">
           <h3>Implement</h3>
           <p>We help EdTech companies with customer acquisition, advisement in the education marketplace, and managing growth in the edtech industry.</p>
-        </div><!--
-        <%= link_to "View More", "", class: "view-more" %> -->
+        </div>
       </div> <!-- /box -->
     </div> <!-- /col -->
 
   </div> <!-- /container -->
 </section>
 
-<section id="take-action" class='bg-red centered contact'>
-  <div class="container">
-    <h1>Take <span class="action">Action</span></h1>
-    <div class="col-md-6 col-md-offset-3">
-      <%= render 'contacts/form' %>
-    </div>
+<section id="take-action" class='bg-red contact'>
+  <div class="container centered">
+    <h1>Por una País Mejor</h1>
   </div> <!-- /container -->
 </section>
 
 <footer>
-  <div class="container">
-    <p class="copyright">© 2015 EdTech Action</p>
+  <div class="container centered">
+    <p class="copyright">© 2015 Michael Polanyi College at UFM</p>
   </div>
 </footer>
