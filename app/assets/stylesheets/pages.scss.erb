@@ -1,4 +1,4 @@
-$primary-color: #e41220; // blue
+$primary-color: #4369a9; // blue
 $secondary-color: #e41220; // orange
 $black: #333;
 $grey: #999;
@@ -31,15 +31,16 @@ h2 {
 }
 
 .top {
-  background-image: url(<%= asset_path('top.jpg') %>);
+  background: -webkit-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* IE10 */
+  background: -o-linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* Opera 11.10+ */
+  background: linear-gradient(90deg, #8e9eab 10%, #eef2f3 90%); /* W3C */
+  position: relative;
   background-size: cover;
-  height: 35rem;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-}
-
-.texas {
-  max-height: 10rem;
+  height: 30rem;
 }
 
 .companies { 
@@ -67,7 +68,7 @@ h2 {
   }
 
   h3 {
-    color: $secondary-color;
+    color: $primary-color;
     font-size: 1.6rem;
     font-weight: 500;
     letter-spacing: 0.03rem;
@@ -95,17 +96,27 @@ h2 {
   border: 0;
 }
 
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 .navbar-brand img {
   margin-top: -15px;
   max-height: 50px;
 }
 
 .navbar-default .navbar-nav>li>a {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 100;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
-  color: $primary-color;
+  color:$primary-color;
   border-left: normal $primary-color;
 }
 

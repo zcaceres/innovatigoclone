@@ -1,28 +1,32 @@
 <!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
         <li><%= link_to "Por Qué", root_path(anchor: "what"), class: "scroll" %></li>
         <li><%= link_to "Quiénes", root_path(anchor: "team"), class: "scroll" %></li>
         <li><%= link_to "Cómo", root_path(anchor: "features"), class: "scroll" %></li>
         <li><%= link_to "Qué", root_path(anchor: "solutions"), class: "scroll" %></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
 </nav>
+
 
 <section id="intro" class="centered bg-blue top">
   <div class="container">
-    <BR><BR><h1>Innova<span class="action">Tigo</span></h1>
+    <BR><BR><span class="action">InnovaTigo</span>
   </div> <!-- /container -->
 </section> <!-- /intro -->
 
@@ -136,9 +140,9 @@
   <div class="container companies centered">
     <h2>Lo Que Nos Hace Diferentes</h2>
         <div class="row">
-          <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="col-md-4 col-sm-12 col-xs-12">
             <%= image_tag "metodo.png", class: "img-responsive center-block cualidad" %>
-            <h5>Metodología<BR>de Resolución de Problemas </h5>
+            <h5>Metodología<BR>de Resolución de Problemas</h5>
             <ul>
               <li><p class="inciso">Facilitadores de Unconference</p></li>
               <li><p class="inciso">Design Thinking</p></li>
@@ -148,24 +152,28 @@
             </ul>
           </div>
 
-          <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="col-md-4 col-sm-12 col-xs-12">
             <%= image_tag "diseno.png", class: "img-responsive center-block cualidad" %>
             <h5>Equipo especializado<BR>en Diseño Web</h5>
-            <p class="inciso">Diseño Gráfico</p>
-            <p class="inciso">Programación</p>
-            <p class="inciso">Redes Sociales</p>
-            <p class="inciso">Interface de Usuario</p>
-            <p class="inciso">Branding</p>
+            <ul>
+              <li><p class="inciso">Diseño Gráfico</p></li>
+              <li><p class="inciso">Programación</p></li>
+              <li><p class="inciso">Redes Sociales</p></li>
+              <li><p class="inciso">Interface de Usuario</p></li>
+              <li><p class="inciso">Branding</p></li>
+            </ul>
           </div>
 
-          <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="col-md-4 col-sm-12 col-xs-12">
             <%= image_tag "cultura.png", class: "img-responsive center-block cualidad" %>
             <h5>Cultura de Diversidad</h5>
-            <p class="inciso">Comunidad Colaborativa </p>
-            <p class="inciso">Multi-lingüe</p>
-            <p class="inciso">Red de Contactos Internacionales</p>
-            <p class="inciso">Espacio de Co-working</p>
-            <p class="inciso">Experiencias en Diferentes Campos</p>
+            <ul>
+              <li><p class="inciso">Comunidad Colaborativa </p></li>
+              <li><p class="inciso">Multi-lingüe</p></li>
+              <li><p class="inciso">Red de Contactos Internacionales</p></li>
+              <li><p class="inciso">Espacio de Co-working</p></li>
+              <li><p class="inciso">Experiencias en Diferentes Campos</p></li>
+            </ul>
           </div>
         </div>
       </div> <!-- /col -->
