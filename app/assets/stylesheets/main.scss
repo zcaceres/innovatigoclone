@@ -158,10 +158,12 @@ p {
 .rol {
   font-family: 'Geo', sans-serif;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: black;
   text-align: center;
   margin: 0.3rem 0 1.5rem 0;
+  letter-spacing: 0rem;
+
 }
 
 .inciso {
@@ -263,29 +265,22 @@ hr {
   white-space: normal;
 }
 
-.mentor {
+.teammate {
   margin-top: 1rem;
   height: 8rem;
   width: auto; 
   border-radius: 150px;
-  border: 2px solid transparent; 
+  /* border: 2px solid transparent; 
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
-  transition: all 0.2s;
+  transition: all 0.2s; */
 }
 
-.mentor:hover { 
-  border: 2px solid $primary-color; 
-  opacity: 0.8;
+.teammate:hover { 
+  /* border: 2px solid $primary-color; */
+  opacity: 0.8; 
 } 
-
-.list-and-picture li {
-  margin: 0px 0px 20px 20px;
-  background-image: url(/assets/check.png);
-  background-repeat: no-repeat;
-  min-height: 20px;
-}
 
 .cualidad {
   margin-bottom: 2rem;
