@@ -58,14 +58,14 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-family: 'Joe', sans-serif;
   color: white;
-  font-size: 4.4rem;
+  font-size: 4.2rem;
   font-weight: 100;
   letter-spacing: 0rem;
   margin: 0 0 0.7rem 0;
 }
 
 .action {
-  font-family: 'Joe';
+  font-family: 'Joe', sans-serif;
   color: white;
   font-size: 4.2rem;
   font-weight: 400;
@@ -74,8 +74,10 @@ h1 {
 }
 
 h2 {
+  font-family: 'Biko', sans-serif;
+  font-weight: 300;
   color: #333;
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin: 0 0 1.3rem 0;
 }
 
@@ -99,11 +101,12 @@ h4 {
 
 h5 {
   color: $secondary-color;
-  font-size: 1rem;
+  text-transform: none;
+  font-size: 1.3rem;
   font-weight: 300;
   margin: 1rem 0 1.5rem 0;
   text-align: center;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0rem;
 }
 
 
@@ -111,7 +114,7 @@ h5 {
 p {
   font-family: 'Geo', sans-serif;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: $black;
   margin: 0 0 2rem 0;
 }
@@ -125,14 +128,24 @@ p {
   margin: 0.3rem 0 1.5rem 0;
 }
 
+.inciso {
+  font-family: 'Geo', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  color: black;
+  text-align: left;
+  margin: 0.3rem 0 0.3rem 0;
+}
+
 .grow {
   font-family: 'Biko', sans-serif;
   font-weight: 300;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #333;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
   text-transform: none; 
+  margin-bottom: 1.7rem;
 }
 
 .how {
@@ -273,7 +286,30 @@ hr {
 .mentor:hover { 
   border: 2px solid $primary-color; 
   opacity: 0.8;
-}  
+} 
+
+#features li {
+  margin: 0px 0px 20px 20px;
+  list-style-image: url(check.png);
+  padding: 3rem;
+  background-repeat: no-repeat;
+  height: 1rem;
+  width: auto;
+}
+
+.cualidad {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  height: 3rem;
+  width: auto; 
+} 
+
+.check {
+  height: 0.4rem;
+  width: auto; 
+  display: inline;
+  margin: 0 0.5rem 0.3rem 0;
+} 
 
 .overlay {
   opacity: 1;
