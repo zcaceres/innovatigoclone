@@ -8,9 +8,30 @@ $background-grey: #eef2f3;
   background-color: $background-grey;
 }
 
-.bg-red {
-  background-color: $primary-color;
-  h1, h2, p, a, a:hover { color: white; }
+.bg-purple {
+  height: 20rem;
+  background: linear-gradient(270deg, #5544a2, #4369a9, #2c457e);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
 }
 
 .innovatigo {
@@ -19,21 +40,17 @@ $background-grey: #eef2f3;
   transform: translateY(-50%);
 }
 
-.box {
-  margin-top: 1.5rem;
-  background-color: #fff;
+.innovamos {
+  margin-top: 1rem;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .logo {
   max-width: 6rem;
   margin-top: 1.5rem;
-}
-
-h2 {
-  text-align: center;
-  display: block;
-  padding-bottom: 15px;
-  margin: 0 1rem 0.2rem;
 }
 
 .top {
@@ -66,7 +83,7 @@ h2 {
   }
 }
 
-.companies { 
+.diferencias { 
   padding-right: 6rem;
   padding-left: 6rem;
 }
@@ -79,11 +96,16 @@ h2 {
 }
 
 .box {
-  padding: 0;
+  background-color: #fff;
+  margin-top: 1.5rem;
   margin-bottom: 1rem;
+  padding: 0;
+  border-radius: 15px;
 
   img {
     width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px
   }
 
   .box-content {
@@ -92,17 +114,34 @@ h2 {
 
   h3 {
     color: $primary-color;
-    font-size: 1.6rem;
-    font-weight: 500;
-    letter-spacing: 0.03rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    letter-spacing: 0rem;
     text-align: left;
     margin-bottom: 1rem;
+    text-transform: none;
   }
 }
 
-#services .box p {
+#solutions .box p {
   @media (min-width: 992px) {
-    height: 9rem;
+    height: 4rem;
+  }
+}
+
+#solutions {  
+  @media (max-width: 767px) {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+}
+
+#features ul {
+  @media (max-width: 991px) {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding-left: 10px;
   }
 }
 
@@ -110,6 +149,7 @@ h2 {
   padding: 15px 0px;
   background-color: white;
   border: 0;
+  box-shadow: 0px -10px 40px 0px rgba(193,198,199,1);
 }
 
 .navbar .navbar-nav {
@@ -128,10 +168,10 @@ h2 {
 }
 
 .navbar-default .navbar-nav>li>a {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Gotham Light', sans-serif;
   font-size: 1rem;
   font-weight: 100;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0rem;
   text-transform: uppercase;
   color:$primary-color;
   border-left: normal $primary-color;

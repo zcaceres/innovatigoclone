@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'Gotham Light';
+  src: url(font-path('gotham_light/gotham_light.ttf')) format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Proxima Nova';
   src: url(font-path('proxima_nova/proxima_nova_bold.otf')) format('opentype');
   font-weight: 800;
